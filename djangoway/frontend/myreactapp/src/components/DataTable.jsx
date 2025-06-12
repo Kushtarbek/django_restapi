@@ -1,5 +1,6 @@
 import { useState } from "react";
 import users from "../data/users.json";
+import BackgroundColors from "./BackgroundColors";
 
 //type User = (typeof users)[number];
 
@@ -27,7 +28,9 @@ export default function DataTable() {
 
   return (
     <div>
+      <BackgroundColors />
       <h3>Data Table in a paginated format</h3>
+
       <table>
         <thead>
           <tr>
